@@ -35,6 +35,12 @@ async function catFactGenerator() {
 
     // Send
     console.log(catFactData.data[0].fact); 
+
+    // Get the element from HTML
+    const catFactDisplay = document.querySelector("#catFactDisplay")
+    
+    // Display the cat fact in the HTML-element
+    catFactDisplay.textContent = catFactData.data[0].fact;
 };
 
 catFactGenerator()
